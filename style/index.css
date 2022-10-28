@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(
+      to right,
+      #6f7280,
+      #2a2c3c,
+      #181827,
+      #833ab4,
+      #fd1d1d,
+      #fcb045
+    );
+    background-size: 400% 400%;
+    animation: body 10s infinite ease-in-out;
+  }
+  
+  @keyframes body {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+.navbar-brand{
+    font-size:2rem;
+  }
+span{
+    color: red;
+    
+}
+
+.inp{
+    border-radius: 1.5rem;
+    border: none;
+    height: 2.7rem;
+    width: 20rem;
+    color: white;
+    text-align: center;
+    border: 1px sodid white;
+    border: 1px solid white;
+}
+.inp:hover{
+    border: 1px solid red;
+}
+form .btn{
+    color: white;
+}
+form .btn:hover{
+    border: 1px solid red;
+}
+.btn{
+    
+    border-radius: 1.5rem;
+    text-align: center;
+    border: 1px solid white;
+}
+.cat{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:white;  
+}
+.card{
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    width: 25rem;
+    padding: 0;
+    background-color:black;
+    color: white;
+}
+img{
+    width: auto; 
+    height:25rem;
+}
+.green{
+    color: green !important;
+}
+.orange{
+    color:orange !important;
+}
+.red{
+    color: #fd1d1d !important;
+}
+.overview{
+    position: absolute;
+    background:#000000d0;
+    color:white;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .65;
+    padding-top: 25%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 25rem;
+    font-family: "Lucida Console", "Courier New", monospace;   
+    transform: translateX(-101%);   
+    transition: transform 0.3s ease-in;
+}
+.card:hover .overview{
+    transform: translateX(0);
+}
+.active{
+    color: red !important;
+}
+.card .rating {
+    width: 2rem;
+    height: 1.5rem;  
+    text-align: center;
+    color: white;
+    border: 1px solid yellow;
+    border-radius: 3px;   
+  }
+#info{
+    display: none;
+}
+@media screen and (max-width:680px) {
+    .inp{     
+        height: 2.2rem;
+        width: 70%;
+        width: 90%;
+    }
+    .btn{
+       font-size: .7rem;
+       height: 2.2rem;
+    }
+}
